@@ -1,0 +1,30 @@
+<div style="text-align:center">
+ <hr>
+ <h1>{{title}}</h1>
+ <input type="number" name="num1" [(ngModel)]="num1">
+ <input type="number" name="num2" [(ngModel)]="num2">
+ <br>
+ <button (click)="add()">add</button>
+ <button (click)="sub()">subtract</button>
+ <button (click)="mul()">multiply</button>
+ <button (click)="div()">divide</button>
+ <br>
+ Result :{{result}}
+ <hr>
+ <br>
+ <h1>{{title2}}</h1>
+ <input type="number" name="num3" [(ngModel)]="num3">
+ <br>
+ <button (click)="fact()">Find factorial</button>
+ Factorial is {{result2}}
+ <hr>
+ <br>
+ <h1>{{title3}}</h1>
+ <input type="number" name="num4" [(ngModel)]="num4">
+ <br>
+ <button (click)="prime()">Check prime</button>
+ <p *ngIf='num4!=2 && result3==0'>The number {{num4}} is neither prime or composite.</p>
+ <p *ngIf='num4==2'>number {{num4}} is prime.</p>
+ <p *ngIf='num4!=2 && result3==1'>number {{num4}} is prime.</p>
+ <p *ngIf='num4!=2 && result3==2'>The number {{num4}} is not prime.</p>
+</div>
